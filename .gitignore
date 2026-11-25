@@ -1,0 +1,60 @@
+# ============================================================
+# .gitignore — Simulasi PID Line Follower
+# ============================================================
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---- Lingkungan virtual ----
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ---- Hasil simulasi (CSV & screenshot dibuat saat aplikasi dijalankan) ----
+data/*
+!data/.gitkeep
+
+# ---- VS Code ----
+# Konfigurasi bersama (launch.json, settings.json, extensions.json) TETAP diunggah;
+# yang diabaikan hanya file pribadi/sementara.
+.vscode/*
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# ---- Sistem operasi ----
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# macOS
+.DS_Store
+.AppleDouble
+._*
+# Linux
+*~
+.directory
+
+# ---- Lain-lain ----
+*.log
+*.tmp
+*.bak
+*.swp
+.env
